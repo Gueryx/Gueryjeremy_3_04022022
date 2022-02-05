@@ -1,0 +1,27 @@
+body {
+    font-size: 1.2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+footer h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+.explore-prev p {
+    font-size: 1.5rem;
+}
+
+.fonctionnement-prev {
+    font-size: 1rem;
+    font-weight: bold;
+    &__number {
+        font-weight: normal;
+    }
+}

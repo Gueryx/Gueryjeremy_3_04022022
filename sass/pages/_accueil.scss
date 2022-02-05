@@ -1,1 +1,69 @@
-@media only screen and (min-width: 769px) and (max-width: 992px) {}
+/* MODULE 2 */
+
+.localisationVille-prev {
+    background-color: #f2f2f2;
+    box-shadow: 0px 0px 5px 0px rgb(184, 184, 184);
+    color: $gris;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+    &__title {
+        font-weight: bold;
+        margin-left: 20px;
+    }
+}
+
+
+/* MODULE 3 */
+
+.explore-prev {
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    &__heading {
+        margin-bottom: -8px;
+    }
+    &__byline {
+        color: $gris;
+    }
+}
+
+
+/* MODULE 4 */
+
+.fonctionnement-prev {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__module {
+        background-color: #fafafa;
+        box-shadow: 0px 0px 5px 5px rgb(243, 243, 243);
+        border-radius: 15px;
+        width: 350px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: baseline;
+        margin: 10px;
+    }
+    &__number {
+        color: white;
+        background-color: $primaire;
+        border-radius: 50%;
+        padding: 2px 7px 2px 7px;
+        margin-left: -12px;
+        margin-right: 25px;
+    }
+}
+
+[class="fas fa-mobile-alt"],
+[class="fas fa-list-ul"],
+[class="fa-solid fa-store"] {
+    color: $gris;
+    margin-right: 25px;
+}
