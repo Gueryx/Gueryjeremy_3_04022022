@@ -1,69 +1,110 @@
-/* MODULE 2 */
-
-.localisationVille-prev {
-    background-color: #f2f2f2;
-    box-shadow: 0px 0px 5px 0px rgb(184, 184, 184);
-    color: $gris;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -20px;
-    &__title {
-        font-weight: bold;
-        margin-left: 20px;
-    }
-}
-
-
-/* MODULE 3 */
-
-.explore-prev {
-    background-color: #fafafa;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-    &__heading {
-        margin-bottom: -8px;
-    }
-    &__byline {
+@media screen and (max-width: 640px) {
+    /* MODULE 2 */
+    .localisationVille-prev {
+        background-color: #f2f2f2;
+        box-shadow: 0px 0px 5px 0px rgb(184, 184, 184);
         color: $gris;
-    }
-}
-
-
-/* MODULE 4 */
-
-.fonctionnement-prev {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    &__module {
-        background-color: #fafafa;
-        box-shadow: 0px 0px 5px 5px rgb(243, 243, 243);
-        border-radius: 15px;
-        width: 350px;
         display: flex;
-        justify-content: flex-start;
-        align-items: baseline;
-        margin: 10px;
+        justify-content: center;
+        align-items: center;
+        margin-top: -20px;
+        &__title {
+            font-weight: bold;
+            margin-left: 20px;
+        }
     }
-    &__number {
-        color: white;
-        background-color: $primaire;
-        border-radius: 50%;
-        padding: 2px 7px 2px 7px;
-        margin-left: -12px;
+    /* MODULE 3 */
+    .explore-prev {
+        background-color: #fafafa;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        &__heading {
+            margin-bottom: -8px;
+        }
+        &__byline {
+            color: $gris;
+        }
+    }
+    /* MODULE 4 */
+    .fonctionnement-prev {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10%;
+        &__h2 {
+            margin-left: -220px;
+        }
+        &__module {
+            background-color: #fafafa;
+            box-shadow: 0px 0px 5px 5px rgb(235, 235, 235);
+            border-radius: 15px;
+            width: 99%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: baseline;
+            margin: 10px;
+        }
+        &__number {
+            color: white;
+            background-color: $primaire;
+            border-radius: 50%;
+            padding: 2px 7px 2px 7px;
+            margin-left: -12px;
+            margin-right: 25px;
+        }
+    }
+    [class="fas fa-mobile-alt"],
+    [class="fas fa-list-ul"],
+    [class="fa-solid fa-store"] {
+        color: $gris;
         margin-right: 25px;
     }
-}
-
-[class="fas fa-mobile-alt"],
-[class="fas fa-list-ul"],
-[class="fa-solid fa-store"] {
-    color: $gris;
-    margin-right: 25px;
+    /* MODULE 5 */
+    .restaurant-prev {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-bottom: 50px;
+        width: 100%;
+        background-color: #fafafa;
+        &__h2 {
+            margin-top: 50px;
+            margin-left: -270px;
+        }
+        &__module {
+            display: flex;
+            width: 430px;
+            height: 300px;
+            margin-bottom: 60px;
+        }
+        img {
+            border-radius: 15px;
+            height: 300px;
+            width: 430px;
+            position: relative;
+        }
+        &__banniere {
+            width: 430px;
+            margin-top: 200px;
+            border-radius: 0px 0px 15px 10px;
+            box-shadow: 0px 0px 20px 0px rgb(235, 235, 235);
+            background-color: white;
+            position: absolute;
+        }
+        &__nouveau {
+            position: absolute;
+            background-color: $tertiaire;
+            color: rgb(50, 143, 110);
+            right: 40px;
+            margin-top: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
 }

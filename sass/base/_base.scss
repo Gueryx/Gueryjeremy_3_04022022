@@ -19,9 +19,17 @@ h2 {
 }
 
 .fonctionnement-prev {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bold;
     &__number {
         font-weight: normal;
     }
+}
+
+img {
+    object-fit: cover;
+}
+
+.restaurant-prev__nouveau {
+    font-weight: bold;
 }
