@@ -55,10 +55,11 @@
             display: flex;
             justify-content: flex-start;
             align-items: baseline;
-            text-decoration: none;
+            margin-bottom: 25px;
+            padding: 8px 0px 8px 0px;
         }
         &__moduleColor {
-            background-color: rgb(255, 245, 255);
+            background-color: rgb(250, 239, 255);
             box-shadow: 0px 0px 5px 5px rgb(235, 235, 235);
             border-radius: 15px;
             width: 99%;
@@ -66,6 +67,7 @@
             justify-content: flex-start;
             align-items: baseline;
             margin: 10px;
+            padding: 8px 0px 8px 0px;
         }
         &__number {
             color: white;
@@ -77,7 +79,6 @@
         }
         &__title {
             color: black;
-            text-decoration: none;
         }
     }
     [class="fas fa-mobile-alt"],
