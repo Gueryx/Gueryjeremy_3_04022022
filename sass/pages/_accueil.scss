@@ -1,6 +1,155 @@
 /* VERSION DESKTOP */
 
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 641px) {
+    .localisationVille-prev {
+        background-color: #f2f2f2;
+        box-shadow: 0px 0px 5px 0px rgb(184, 184, 184);
+        color: $gris;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -20px;
+        &__title {
+            font-weight: bold;
+            margin-left: 20px;
+        }
+    }
+    /* MODULE 3 */
+    .explore-prev {
+        background-color: #fafafa;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        &__heading {
+            margin-bottom: -8px;
+        }
+        &__byline {
+            color: $gris;
+        }
+    }
+    /* MODULE 4 */
+    .fonctionnement-prev {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10%;
+        &__h2 {}
+        &__module {
+            background-color: #fafafa;
+            box-shadow: 0px 0px 5px 5px rgb(235, 235, 235);
+            border-radius: 15px;
+            width: 99%;
+            margin: 10px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: baseline;
+            margin-bottom: 25px;
+            padding: 8px 0px 8px 0px;
+        }
+        &__moduleColor {
+            background-color: rgb(250, 239, 255);
+            box-shadow: 0px 0px 5px 5px rgb(235, 235, 235);
+            border-radius: 15px;
+            width: 99%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: baseline;
+            margin: 10px;
+            padding: 8px 0px 8px 0px;
+        }
+        &__number {
+            color: white;
+            background-color: $primaire;
+            border-radius: 50%;
+            padding: 2px 7px 2px 7px;
+            margin-left: -12px;
+            margin-right: 25px;
+        }
+        &__title {
+            color: black;
+        }
+    }
+    [class="fas fa-mobile-alt"],
+    [class="fas fa-list-ul"] {
+        color: $gris;
+        margin-right: 25px;
+    }
+    [class="fas fa-store"] {
+        color: $primaire;
+        margin-right: 25px;
+    }
+    /* MODULE 5 */
+    .restaurant-prev {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-bottom: 50px;
+        width: 100%;
+        background-color: #fafafa;
+        &__h2 {
+            width: 100%;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__module {
+            display: flex;
+            width: 430px;
+            height: 300px;
+            margin-bottom: 60px;
+        }
+        img {
+            border-radius: 15px;
+            height: 300px;
+            width: 430px;
+            position: relative;
+            object-fit: center;
+            object-position: center;
+        }
+        &__banniere {
+            color: black;
+            width: 410px;
+            height: 100px;
+            margin-top: 200px;
+            padding-left: 20px;
+            border-radius: 0px 0px 15px 10px;
+            box-shadow: 0px 0px 20px 0px rgb(235, 235, 235);
+            line-height: 1px;
+            background-color: white;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        i {
+            font-size: 1.5rem;
+            margin-left: 150px;
+        }
+        &__nouveau {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $tertiaire;
+            font-size: 1rem;
+            color: rgb(50, 143, 110);
+            margin-top: 20px;
+            margin-left: 300px;
+            padding-left: 10px;
+            padding-right: 10px;
+            width: 80px;
+            height: 40px;
+        }
+    }
+}
 
 
 /* VERSION MOBILE */
@@ -136,7 +285,7 @@
         }
         i {
             font-size: 1.5rem;
-            padding-left: 150px;
+            margin-left: 150px;
         }
         &__nouveau {
             position: absolute;
@@ -146,7 +295,7 @@
             background-color: $tertiaire;
             font-size: 1rem;
             color: rgb(50, 143, 110);
-            right: 40px;
+            margin-left: 300px;
             margin-top: 20px;
             padding-left: 10px;
             padding-right: 10px;
