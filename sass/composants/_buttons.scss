@@ -18,15 +18,13 @@
             box-shadow: 5px 5px 10px rgba(95, 95, 95, 0.25);
         }
     }
-    .fas,
-    .far {
-        color: rgb(0, 0, 0);
-        &:hover {
-            cursor: pointer;
-            background: linear-gradient(0deg, $secondaire 0%, $primaire 100%);
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
+    /*COEUR*/
+    .restaurant-prev {
+        i {
+            @include heart;
+            &:hover {
+                @include Gradient;
+            }
         }
     }
 }
@@ -51,15 +49,13 @@
             box-shadow: 15px 15px 15px rgba(119, 119, 119, 0.25);
         }
     }
-    .fas,
-    .far {
-        color: rgb(0, 0, 0);
-        &:hover {
-            cursor: pointer;
-            background: linear-gradient(0deg, $secondaire 0%, $primaire 100%);
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
+    /*COEUR*/
+    .restaurant-prev {
+        i {
+            @include heart;
+            &:hover {
+                @include Gradient;
+            }
         }
     }
 }

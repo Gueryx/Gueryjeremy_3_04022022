@@ -1,0 +1,22 @@
+@mixin heart {
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: #4F4F4F;
+    @media #{$breakpoint-TV-min} {
+        font-size: 2rem;
+        margin-right: 2rem;
+    }
+    @media #{$breakpoint-TV-max} {
+        font-size: 2.2rem;
+    }
+}
+
+@mixin Gradient {
+    font-weight: 900;
+    color: rgb(147, 86, 220);
+    display: block;
+    background: -webkit-linear-gradient($primaire, $secondaire);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
