@@ -15,7 +15,7 @@
         box-shadow: 5px 5px 10px rgb(0 0 0 / 25%);
         margin-bottom: 40px;
         &:hover {
-            box-shadow: 5px 5px 10px rgba(95, 95, 95, 0.25);
+            @include button-hover;
         }
     }
     /*COEUR*/
@@ -46,7 +46,7 @@
         box-shadow: 5px 5px 10px rgb(0 0 0 / 25%);
         margin-bottom: 40px;
         &:hover {
-            box-shadow: 15px 15px 15px rgba(119, 119, 119, 0.25);
+            @include button-hover;
         }
     }
     /*COEUR*/
