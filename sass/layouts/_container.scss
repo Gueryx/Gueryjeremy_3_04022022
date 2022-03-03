@@ -1,64 +1,124 @@
-.banniere-prev {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    &__module {
-        color: black;
-        width: 410px;
-        height: 100px;
-        margin-bottom: 15px;
-        padding-left: 20px;
-        border-radius: 15px;
-        box-shadow: 0px 0px 20px 0px #f2f2f2;
-        background-color: white;
-        line-height: 0;
+/* DESKTOP */
+
+@media only screen and (min-width: 641px) {
+    .banniere-prev {
         display: flex;
-        flex-wrap: wrap;
         flex-direction: column;
-        justify-content: flex-start;
+        flex-wrap: wrap;
+        align-items: center;
+        &__module {
+            color: black;
+            width: 410px;
+            height: 100px;
+            margin-bottom: 15px;
+            padding-left: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px 0px #f2f2f2;
+            background-color: white;
+            line-height: 0;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
     }
-}
-
-
-/* IMAGE PAGE MENU2 RETOUCHE */
-
-.imgRetouche {
-    position: initial;
-    margin-top: -150px;
-    margin-bottom: -160px;
-}
-
-
-/* TITRES H1 & H2 PAGES MENU */
-
-.titrePageMenu {
-    position: relative;
-    display: flex;
-    align-items: baseline;
-    background-color: #ffff;
-    margin-top: -70px;
-    padding-top: 40px;
-    padding-bottom: 35px;
-    border-radius: 70px 70px 0px 0px;
-    h1 {
-        font-size: 1.5em;
-        margin-left: 25px;
+    /* IMAGE PAGE MENU2 RETOUCHE */
+    .imgRetouche {
+        position: initial;
+        margin-top: -150px;
+        margin-bottom: -160px;
     }
-    i {
-        position: absolute;
-        right: 50px;
-        bottom: 65px;
+    /* TITRES H1 & H2 PAGES MENU */
+    .titrePageMenu {
+        position: relative;
+        display: flex;
+        align-items: baseline;
+        background-color: #ffff;
+        margin-top: -70px;
+        padding-top: 40px;
+        padding-bottom: 35px;
+        border-radius: 70px 70px 0px 0px;
+        h1 {
+            font-size: 1.5em;
+            margin-left: 25px;
+        }
+        i {
+            position: absolute;
+            right: 50px;
+            bottom: 65px;
+            font-size: 1.2em;
+        }
+    }
+    .titleH2 {
+        margin-bottom: 25px;
+        color: $gris;
         font-size: 1.2em;
+        margin-left: 25px;
+        width: 10%;
+        font-weight: normal;
+        @include border-bottom;
     }
 }
 
-.titleH2 {
-    margin-bottom: 25px;
-    color: $gris;
-    font-size: 1.2em;
-    margin-left: 25px;
-    width: 10%;
-    font-weight: normal;
-    @include border-bottom;
+
+/* MOBILE */
+
+@media screen and (max-width: 640px) {
+    .banniere-prev {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        &__module {
+            color: black;
+            width: 410px;
+            height: 100px;
+            margin-bottom: 15px;
+            padding-left: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px 0px #f2f2f2;
+            background-color: white;
+            line-height: 0;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+    }
+    /* IMAGE PAGE MENU2 RETOUCHE */
+    .imgRetouche {
+        position: initial;
+        margin-top: -150px;
+        margin-bottom: -160px;
+    }
+    /* TITRES H1 & H2 PAGES MENU */
+    .titrePageMenu {
+        position: relative;
+        display: flex;
+        align-items: baseline;
+        background-color: #ffff;
+        margin-top: -70px;
+        padding-top: 40px;
+        padding-bottom: 35px;
+        border-radius: 70px 70px 0px 0px;
+        h1 {
+            font-size: 1.5em;
+            margin-left: 25px;
+        }
+        i {
+            position: absolute;
+            right: 50px;
+            bottom: 65px;
+            font-size: 1.2em;
+        }
+    }
+    .titleH2 {
+        margin-bottom: 25px;
+        color: $gris;
+        font-size: 1.2em;
+        margin-left: 25px;
+        width: 10%;
+        font-weight: normal;
+        @include border-bottom;
+    }
 }
