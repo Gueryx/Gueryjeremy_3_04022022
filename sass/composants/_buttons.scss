@@ -34,17 +34,7 @@
 
 @media screen and (max-width: 640px) {
     .explore-prev__button {
-        border: 0;
-        padding: 18px 18px;
-        font-size: 1.1rem;
-        border-radius: 100px;
-        color: white;
-        background-color: $gris;
-        background-image: linear-gradient(0deg, $primaire, $secondaire);
-        cursor: pointer;
-        transition-duration: 1s;
-        box-shadow: 5px 5px 10px rgb(0 0 0 / 25%);
-        margin-bottom: 40px;
+        @include button-principal;
         &:hover {
             @include button-hover;
         }
@@ -56,6 +46,15 @@
             &:hover {
                 @include Gradient;
             }
+        }
+    }
+    .explore-prev__buttonBottom {
+        @include button-principal;
+        margin: 50px 30% 150px 30%;
+        padding-left: 50px;
+        padding-right: 50px;
+        &:hover {
+            @include button-hover;
         }
     }
 }
