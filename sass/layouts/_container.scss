@@ -82,7 +82,25 @@
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
-            justify-content: flex-start;
+            justify-content: flex-end;
+            align-items: flex-start;
+        }
+        &__title {
+            text-overflow: ellipsis;
+        }
+        &__byline {
+            text-overflow: ellipsis;
+        }
+        &__price {
+            font-weight: bold;
+            padding-left: 0.5rem;
+        }
+        &__confirmation {
+            height: 100%;
+            width: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
     /* IMAGE PAGE MENU2 RETOUCHE */

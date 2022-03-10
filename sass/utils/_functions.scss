@@ -127,3 +127,68 @@
         opacity: 100%;
     }
 }
+
+
+/* animation validation module vert */
+
+.banniere-prev {
+    &__confirmation {
+        -webkit-text-fill-color: transparent;
+        cursor: pointer;
+         :hover {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0px 15px 15px 0px;
+            width: 5rem;
+            height: 100%;
+            color: white;
+            background-color: $tertiaire;
+            -webkit-animation: scale-up-hor-right 0.8s both;
+            animation: scale-up-hor-right 0.8s both;
+        }
+        @-webkit-keyframes scale-up-hor-right {
+            0% {
+                -webkit-transform: scaleX(0.4);
+                transform: scaleX(0.4);
+                -webkit-transform-origin: 100% 100%;
+                transform-origin: 100% 100%;
+            }
+            100% {
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+                -webkit-transform-origin: 100% 100%;
+                transform-origin: 100% 100%;
+            }
+        }
+        @keyframes scale-up-hor-right {
+            0% {
+                -webkit-transform: scaleX(0.4);
+                transform: scaleX(0.4);
+                -webkit-transform-origin: 100% 100%;
+                transform-origin: 100% 100%;
+            }
+            100% {
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+                -webkit-transform-origin: 100% 100%;
+                transform-origin: 100% 100%;
+            }
+        }
+    }
+    /*
+    i:hover {
+        -webkit-animation: rotation 0.8s both;
+        animation: rotation 0.8s both;
+        @keyframes rotation {
+            0% {
+                transform: rotate(-180deg);
+                z-index: 10;
+            }
+            100% {
+                transform: rotate(-360deg);
+            }
+        }
+    }
+    */
+}
