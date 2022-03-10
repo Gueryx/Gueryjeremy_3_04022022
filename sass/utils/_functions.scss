@@ -65,7 +65,7 @@
     100% {
         opacity: 0;
         z-index: -10;
-        transform: rotate(360deg) scale(3);
+        transform: rotate(1440deg) scale(3);
     }
 }
 
@@ -76,7 +76,7 @@
     100% {
         opacity: 0;
         z-index: -10;
-        transform: rotate(360deg) scale(3);
+        transform: rotate(1440deg) scale(3);
     }
 }
 
@@ -132,39 +132,27 @@
 /* animation validation module vert */
 
 .banniere-prev {
-    h3,
-    p {
-        text-overflow: ellipsis;
-        /* overflow: hidden; */
-    }
     &__confirmation {
         cursor: pointer;
          :hover {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2rem;
-            border-radius: 0px 15px 15px 0px;
-            width: 5rem;
-            height: 100%;
-            color: white;
-            background-color: $tertiaire;
             -webkit-animation: scale-up-hor-right 0.8s both;
             animation: scale-up-hor-right 0.8s both;
         }
-        @keyframes scale-up-hor-right {
-            0% {
-                -webkit-transform: scaleX(0.6);
-                transform: scaleX(0.6);
-                -webkit-transform-origin: 100% 100%;
-                transform-origin: 100% 100%;
-            }
-            100% {
-                -webkit-transform: scaleX(1);
-                transform: scaleX(1);
-                -webkit-transform-origin: 100% 100%;
-                transform-origin: 100% 100%;
-            }
+    }
+    @keyframes scale-up-hor-right {
+        0% {
+            -webkit-transform: scaleX(0.6);
+            transform: scaleX(0.6);
+            -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+            opacity: 0.5;
+        }
+        100% {
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+            -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+            opacity: 1;
         }
     }
     /*
