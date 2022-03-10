@@ -66,8 +66,8 @@
 @media screen and (max-width: 640px) {
     .banniere-prev {
         display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
-        justify-content: center;
         align-items: center;
         &__module {
             color: black;
@@ -82,46 +82,7 @@
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
-            justify-content: flex-end;
-            align-items: flex-start;
-            i {
-                margin-left: auto;
-            }
-        }
-        &__ensemble {
-            display: flex;
-            flex-wrap: nowrap;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: space-between;
-            &__byline {
-                text-overflow: ellipsis;
-                overflow: hidden;
-            }
-        }
-        &__price {
-            font-weight: bold;
-            padding-left: 0.5rem;
-        }
-        &__confirmation {
-            position: fixed;
-            color: white;
-            right: 0px;
-            height: 88%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-             :hover {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-size: 2rem;
-                border-radius: 0px 15px 15px 0px;
-                width: 5rem;
-                height: 100%;
-                color: white;
-                background-color: $tertiaire;
-            }
+            justify-content: flex-start;
         }
     }
     /* IMAGE PAGE MENU2 RETOUCHE */
