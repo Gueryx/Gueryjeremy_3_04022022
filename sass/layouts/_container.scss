@@ -66,8 +66,8 @@
 @media screen and (max-width: 640px) {
     .banniere-prev {
         display: flex;
-        flex-direction: column;
         flex-wrap: wrap;
+        justify-content: center;
         align-items: center;
         &__module {
             color: black;
@@ -84,20 +84,19 @@
             flex-direction: column;
             justify-content: flex-end;
             align-items: flex-start;
-        }
-        &__title {
-            text-overflow: ellipsis;
-        }
-        &__byline {
-            text-overflow: ellipsis;
+            i {
+                margin-left: auto
+            }
         }
         &__price {
             font-weight: bold;
             padding-left: 0.5rem;
         }
         &__confirmation {
-            height: 100%;
-            width: 50px;
+            position: absolute;
+            right: 0px;
+            height: 88%;
+            width: 80px;
             display: flex;
             align-items: center;
             justify-content: center;
