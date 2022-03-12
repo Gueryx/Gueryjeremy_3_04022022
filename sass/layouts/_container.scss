@@ -6,20 +6,72 @@
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
-        &__module {
-            color: black;
-            width: 410px;
-            height: 100px;
-            margin-bottom: 15px;
-            padding-left: 20px;
-            border-radius: 15px;
-            box-shadow: 0px 0px 20px 0px #f2f2f2;
-            background-color: white;
-            line-height: 0;
+        &__card {
             display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-            justify-content: flex-start;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            width: 80%;
+            height: 90px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            box-shadow: 0px 0px 5px 5px rgb(235, 235, 235);
+            border-radius: 15px;
+            cursor: pointer;
+            margin-bottom: 25px;
+        }
+        &__main {
+            flex-grow: 1;
+            flex-shrink: 1;
+            height: 80px;
+            overflow: hidden;
+            border-radius: 0px 15px 15px 0px;
+            margin-left: 15px;
+        }
+        &__main h3 {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            margin-bottom: 10px;
+        }
+        &__main &__descprice {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            overflow: hidden;
+            margin-top: -25px;
+        }
+        &__main &__descprice &__descprice__desc {
+            white-space: nowrap;
+            flex-shrink: 1;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        &__main &__descprice &__descprice__price {
+            flex-shrink: 0;
+        }
+        &__descprice__price {
+            font-weight: bold;
+            margin-right: 25px;
+            margin-left: 10px;
+        }
+        &__green {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255, 255, 255, 0);
+            font-size: 2rem;
+            background-color: $tertiaire;
+            height: 90px;
+            flex-grow: 0;
+            flex-shrink: 0;
+            width: 0;
+            transition: all 0.2s;
+        }
+        &__card:hover &__green {
+            color: rgba(255, 255, 255);
+            width: 100px;
+            border-radius: 0px 15px 15px 0px;
         }
     }
     /* IMAGE PAGE MENU2 RETOUCHE */

@@ -26,9 +26,15 @@
             }
         }
     }
+    .btnBottom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .explore-prev__buttonBottom {
         @include button-principal;
-        margin: 50px 0% 150px 45%;
+        margin-top: 50px;
+        margin-bottom: 150px;
         padding-left: 50px;
         padding-right: 50px;
         &:hover {
@@ -64,9 +70,15 @@
             }
         }
     }
+    .btnBottom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .explore-prev__buttonBottom {
         @include button-principal;
-        margin: 50px 20% 150px 30%;
+        margin-top: 50px;
+        margin-bottom: 150px;
         padding-left: 50px;
         padding-right: 50px;
         &:hover {
